@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="img/logo.png" alt="logo">
+		</div>
+		<div class="search">
+			<input type="text" placeholder="Поиск...">
+			<a href="#">Найти</a>
+		</div>
+		<div class="login">
+			<a href="#"><button onclick="document.getElementById('id01').style.display='block'">Войти</button></a>
+		</div>
+	</header>
+	<div class="titles tab">
+		<a href="#" class="films"><button class="tablinks" onclick="openTV(event, 'FilmsTab')" id="defaultOpen">Фильмы</button></a>
+		<a href="#" class="tv"><button class="tablinks" onclick="openTV(event, 'TvTab')">Телеканалы</button></a>
+	</div>
+<!-- ----------------------------------------------------------->
+ <!-- block 1 -->	
+	<div class="container tabcontent" id="FilmsTab">
+		<div class="news">
+			<div class="titleNews">
+				<h4>🔥 Новинки</h4>
+			</div>
+			<div class="blocksNews">
+				<div class="block-new">
+					<img src="img/imgNew1.png" alt="img">
+					<p>Мульт в кино. Выпуск №103. Некогда грустить!</p>
+				</div>
+				<div class="block-new">
+					<img src="img/imgNew2.png" alt="img">
+					<p>Новый Бэтмен</p>
+				</div>
+				<div class="block-new">
+					<img src="img/imgNew3.png" alt="img">
+					<p>Однажды... в Голливуде</p>
+				</div>
+				<div class="block-new">
+					<img src="img/imgNew4.png" alt="img">
+					<p>Стриптизёрши</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="genres">
+			<div class="titleGenres">
+				<h4>Жанры</h4>
+			</div>
+			<div class="blocksGenres">
+				<div class="block-genre bl-g1">
+					<img src="img/emj1.png" alt="emj">
+					<p class="zag">Комедии</p>
+				</div>
+				<div class="block-genre bl-g2">
+					<img src="img/emj2.png" alt="emj">
+					<p class="zag">Драмы</p>
+				</div>
+				<div class="block-genre bl-g3">
+					<img src="img/emj3.png" alt="emj">
+					<p class="zag">Фантастика</p>
+				</div>
+				<div class="block-genre bl-g4">
+					<img src="img/emj4.png" alt="emj">
+					<p class="zag">Ужасы</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+<!-- block 1 end -->
+<!-- ----------------------------------------------------------->
+
+<!-- ----------------------------------------------------------->
+<!-- block 2 -->
+	<!-- <div> -->
+		<div class="container2 tabcontent" id="TvTab">
+			<div class="tvBlocks">
+				<img src="img/tv_logo1.png" alt="logo" class="tv-logo1">
+				<div>
+					<h5>Первый канал</h5>
+					<div class="tv2 tv2-first">
+						<p>13:00</p>
+						<p class="tv2_srt2">Новости (с субтитрами)</p>
+					</div>
+					<div class="tv2">
+						<p>14:00</p>
+						<p class="tv2_srt2">Давай поженимся</p>
+					</div>
+					<div class="tv2">
+						<p>15:00</p>
+						<p class="tv2_srt2">Другие новости</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tvBlocks">
+				<img src="img/tv_logo2.png" alt="logo" class="tv-logo2">
+				<div>
+					<h5>2x2</h5>
+					<div class="tv2 tv2-first">
+						<p>13:00</p>
+						<p class="tv2_srt2">МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+					</div>
+					<div class="tv2">
+						<p>14:00</p>
+						<p class="tv2_srt2">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+					</div>
+					<div class="tv2">
+						<p>15:00</p>
+						<p class="tv2_srt2">БУРДАШЕВ. Сезон 1, 20 серия</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tvBlocks">
+				<img src="img/tv_logo3.png" alt="logo" class="tv-logo3">
+				<div>
+					<h5>РБК</h5>
+					<div class="tv2 tv2-first">
+						<p>13:00</p>
+						<p class="tv2_srt2">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+					</div>
+					<div class="tv2">
+						<p>14:00</p>
+						<p class="tv2_srt2">ДЕНЬ. Главные темы</p>
+					</div>
+					<div class="tv2">
+						<p>15:00</p>
+						<p class="tv2_srt2">Главные новости</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tvBlocks">
+				<img src="img/tv_logo4.png" alt="logo" class="tv-logo4">
+				<div>
+					<h5>AMEDIA PREMIUM</h5>
+					<div class="tv2 tv2-first">
+						<p>13:00</p>
+						<p class="tv2_srt2">Клиент всегда мёртв</p>
+					</div>
+					<div class="tv2">
+						<p>14:00</p>
+						<p class="tv2_srt2">Голодные игры: Сойка-пересмешница. Часть I</p>
+					</div>
+					<div class="tv2">
+						<p>15:00</p>
+						<p class="tv2_srt2">Секс в большом городе</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tvBlocks">
+				<img src="img/tv_logo4.png" alt="logo" class="tv-logo4">
+				<div>
+					<h5>AMEDIA PREMIUM</h5>
+					<div class="tv2 tv2-first">
+						<p>13:00</p>
+						<p class="tv2_srt2">Клиент всегда мёртв</p>
+					</div>
+					<div class="tv2">
+						<p>14:00</p>
+						<p class="tv2_srt2">Голодные игры: Сойка-пересмешница. Часть I</p>
+					</div>
+					<div class="tv2">
+						<p>15:00</p>
+						<p class="tv2_srt2">Секс в большом городе</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- </div> -->
+<!-- block 2 end -->
+<!-- ----------------------------------------------------------->
+
+<!--------------------------------------------->
+<!-- form -->
+
+<div id="id01" class="modal"> 
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="entr">
+        <h3>Вход</h3>
+    </div>
+    <div class="container3">
+      <input type="text" placeholder="Логин" name="uname" required>
+      <input type="password" placeholder="Пароль" name="psw" required>
+      <label class="remember_btn">
+        <input type="checkbox" name="remember">
+        <p>Запомнить</p>
+      </label>
+      <button type="submit">Войти</button>
+    </div>
+  </form>
+</div>
+
+<!-- form-end -->
+<!--------------------------------------------->
+	<footer>
+		<div class="footer">
+			<div class="footer_logo">
+				<img src="img/footer_logo.svg" alt="logo">
+			</div>
+			<div class="text_footer">
+				<p>426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+				<p class="footer_number">+7 (3412) 93-88-61, 43-29-29</p>
+				<p class="footer_link">htc-cs.ru</p>
+			</div>
+		</div>
+	</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
